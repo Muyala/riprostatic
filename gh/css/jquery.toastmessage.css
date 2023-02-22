@@ -1,0 +1,148 @@
+.toast-container {
+	width: 280px;
+	z-index: 9999;
+}
+
+
+* html .toast-container {
+	position: absolute;
+}
+
+.toast-item {
+	height: auto;
+	background: #333;
+    opacity: 0.9;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	color: #eee;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-family: lucida Grande;
+	font-size: 14px;
+	border: 2px solid #999;
+	display: block;
+	position: relative;
+	margin: 0 0 12px 0;
+}
+
+.toast-item p {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.toast-item-close {
+    background:url(data:image/gif;base64,R0lGODlhFgAWAOZiAAUFBd3d3eHh4be3tzg4ODU1NaysrMHBwTs7O39/f15eXs/Pz+fn5wwMDEVFRTIyMh0dHUpKSigoKJeXl3x8fKioqOTk5NPT05qamjc3N2RkZDExMYmJiUxMTDo6Ouvr62pqanFxcW1tbfz8/CAgIM3Nze7u7vn5+eLi4m5ubjMzM52dnRcXF5ubm/Pz801NTcvLyz09PSwsLISEhJmZmT8/P+Xl5SIiIggICJGRkVxcXCUlJfDw8K2trZaWlhAQED4+Pmtra2hoaMfHx0BAQFpaWsrKynl5eVZWVq+vr6Ojo/j4+IeHh3p6ehQUFNjY2Ly8vK6ursLCwmBgYJSUlHBwcICAgIODg/Hx8WJiYouLi9/f33JycsTExC4uLvb29v///wICAi4uLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAGIALAAAAAAWABYAAAf/gGKCgwVFPgFfXwEtUwWDj4MbIQJglQxblWACKV6QggQ9YCcTDmGmYQVaX2BKHpAEMGADJKe1YRJGYAsIkVFgKwC2tgBXYAcPglyywcLCVGBNYgUCLhCnDwi1LFkNpjgoAh4KYDmnMpUJpjcWYBOnGmBBNGAEpySrYAk77GAcp04jBgTgYSsCPiyVDDAzVQLRE2ERlmRSaCtJogvCJHzIZEWYAUUfbElgUGkEOltdAlQAY83UD5JgDHTAB+IUABMDhIARcYpAwmAGwVQ45QBMFQICbHQzpQHEwgIJWoaBIgCImCP9mjUbx0TQgwNgFGitheDEgQyDiCwAQ2FsGB1fKxZ0gFQD7AUkS4lKMfbCkxgVFCh9KYEBwxATmmag9SsIgQiBiQIMCBHDUyAAOw==);
+    width:22px;
+    height:22px;
+    position: absolute;
+    top:7px;
+    right:7px;
+}
+
+.toast-item-image {
+    width:32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 10px;
+}
+
+.toast-item-image-notice {
+  /**  background:url(./Toastimg/notice.png);*/
+  background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDIzQzE4LjA3NTEgMjMgMjMgMTguMDc1MSAyMyAxMkMyMyA1LjkyNDg3IDE4LjA3NTEgMSAxMiAxQzUuOTI0ODcgMSAxIDUuOTI0ODcgMSAxMkMxIDE4LjA3NTEgNS45MjQ4NyAyMyAxMiAyM1oiIGZpbGw9IiMzMzcwRkYiLz4KPHBhdGggZD0iTTEyIDhDMTIuNTUyMyA4IDEzIDcuNTUyMjggMTMgN0MxMyA2LjQ0NzcyIDEyLjU1MjMgNiAxMiA2QzExLjQ0NzcgNiAxMSA2LjQ0NzcyIDExIDdDMTEgNy41NTIyOCAxMS40NDc3IDggMTIgOFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSA5QzEwLjQ0NzcgOSAxMCA5LjQ0NzcyIDEwIDEwQzEwIDEwLjU1MjMgMTAuNDQ3NyAxMSAxMSAxMVYxNUgxMEM5LjQ0NzcyIDE1IDkgMTUuNDQ3NyA5IDE2QzkgMTYuNTUyMyA5LjQ0NzcyIDE3IDEwIDE3SDE0QzE0LjU1MjMgMTcgMTUgMTYuNTUyMyAxNSAxNkMxNSAxNS40NDc3IDE0LjU1MjMgMTUgMTQgMTVIMTNWMTBDMTMgOS40NDc3MiAxMi41NTIzIDkgMTIgOUgxMVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPg==) no-repeat 0 50%
+}
+
+.toast-item-image-success {
+   /** background:url(./Toastimg/success.png);*/
+    background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMTJDMSAxOC4wNzU4IDUuOTI0MjIgMjMgMTIgMjNDMTguMDc1OCAyMyAyMyAxOC4wNzU4IDIzIDEyQzIzIDUuOTI0MjIgMTguMDc1OCAxIDEyIDFDNS45MjQyMiAxIDEgNS45MjQyMiAxIDEyWiIgZmlsbD0iIzM0QzcyNCIvPgo8cGF0aCBkPSJNNy4yOTI4OSAxMS43MDczQzYuOTAyMzcgMTIuMDk3OCA2LjkwMjM3IDEyLjczMDkgNy4yOTI4OSAxMy4xMjE1TDEwLjEyMTMgMTUuOTQ5OUMxMC41MTE4IDE2LjM0MDQgMTEuMTQ1IDE2LjM0MDQgMTEuNTM1NSAxNS45NDk5TDE3LjE5MjQgMTAuMjkzQzE3LjU4MjkgOS45MDI1MiAxNy41ODI5IDkuMjY5MzUgMTcuMTkyNCA4Ljg3ODgzQzE2LjgwMTkgOC40ODgzMSAxNi4xNjg3IDguNDg4MzEgMTUuNzc4MiA4Ljg3ODgzTDEwLjgyODQgMTMuODI4Nkw4LjcwNzExIDExLjcwNzNDOC4zMTY1OCAxMS4zMTY3IDcuNjgzNDIgMTEuMzE2NyA3LjI5Mjg5IDExLjcwNzNaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K) no-repeat 0 50%
+}
+
+.toast-item-image-warning {
+  /**  background:url(./Toastimg/warning.png);*/
+  background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDIzQzE4LjA3NTEgMjMgMjMgMTguMDc1MSAyMyAxMkMyMyA1LjkyNDg3IDE4LjA3NTEgMSAxMiAxQzUuOTI0ODcgMSAxIDUuOTI0ODcgMSAxMkMxIDE4LjA3NTEgNS45MjQ4NyAyMyAxMiAyM1oiIGZpbGw9IiNGRjg4MDAiLz4KPHBhdGggZD0iTTEyIDdDMTEuNDQ3NyA3IDExIDcuNDQ3NzIgMTEgOFYxM0MxMSAxMy41NTIzIDExLjQ0NzcgMTQgMTIgMTRDMTIuNTUyMyAxNCAxMyAxMy41NTIzIDEzIDEzVjhDMTMgNy40NDc3MiAxMi41NTIzIDcgMTIgN1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMiAxN0MxMi41NTIzIDE3IDEzIDE2LjU1MjMgMTMgMTZDMTMgMTUuNDQ3NyAxMi41NTIzIDE1IDEyIDE1QzExLjQ0NzcgMTUgMTEgMTUuNDQ3NyAxMSAxNkMxMSAxNi41NTIzIDExLjQ0NzcgMTcgMTIgMTdaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K) no-repeat 0 50%
+}
+
+.toast-item-image-error {
+   /** background:url(./Toastimg/error.png);*/
+    background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDIzQzUuOTI1IDIzIDEgMTguMDc1IDEgMTJDMSA1LjkyNSA1LjkyNSAxIDEyIDFDMTguMDc1IDEgMjMgNS45MjUgMjMgMTJDMjMgMTguMDc1IDE4LjA3NSAyMyAxMiAyM1oiIGZpbGw9IiNGNTRBNDUiLz4KPHBhdGggZD0iTTcuNzU3MjUgNy43NTc3NEM3LjM2NjcyIDguMTQ4MjYgNy4zNjY3MiA4Ljc4MTQzIDcuNzU3MjUgOS4xNzE5NUwxMC41ODU3IDEyLjAwMDRMNy43NTcyNSAxNC44Mjg4QzcuMzY2NzIgMTUuMjE5MyA3LjM2NjcyIDE1Ljg1MjUgNy43NTcyNSAxNi4yNDNDOC4xNDc3NyAxNi42MzM1IDguNzgwOTQgMTYuNjMzNSA5LjE3MTQ2IDE2LjI0M0wxMS45OTk5IDEzLjQxNDZMMTQuODI4MyAxNi4yNDNDMTUuMjE4OCAxNi42MzM1IDE1Ljg1MiAxNi42MzM1IDE2LjI0MjUgMTYuMjQzQzE2LjYzMzEgMTUuODUyNSAxNi42MzMxIDE1LjIxOTMgMTYuMjQyNSAxNC44Mjg4TDEzLjQxNDEgMTIuMDAwNEwxNi4yNDI1IDkuMTcxOTVDMTYuNjMzMSA4Ljc4MTQzIDE2LjYzMzEgOC4xNDgyNiAxNi4yNDI1IDcuNzU3NzRDMTUuODUyIDcuMzY3MjEgMTUuMjE4OCA3LjM2NzIxIDE0LjgyODMgNy43NTc3NEwxMS45OTk5IDEwLjU4NjJMOS4xNzE0NiA3Ljc1Nzc0QzguNzgwOTQgNy4zNjcyMSA4LjE0Nzc3IDcuMzY3MjEgNy43NTcyNSA3Ljc1Nzc0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==) no-repeat 0 50%
+}
+
+
+/**
+ * toast types
+ *
+ * pattern: toast-type-[value]
+ * where 'value' is the real value of the plugin option 'type'
+ *
+ */
+.toast-type-notice {
+    color: white;
+}
+
+.toast-type-success {
+    color: white;
+}
+
+.toast-type-warning {
+    color: white;
+    border-color: #FCBD57;
+}
+
+.toast-type-error {
+    color: white;
+    border-color: #B32B2B;
+}
+
+/**
+ * positions
+ *
+ * pattern: toast-position-[value]
+ * where 'value' is the real value of the plugin option 'position'
+ *
+ */
+.toast-position-top-left {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.toast-position-top-center {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.toast-position-top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.toast-position-middle-left {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    margin-top: -40px;
+}
+
+.toast-position-middle-center {
+    position: fixed;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 50%;
+}
+
+.toast-position-middle-right {
+    position: fixed;
+    right: 20px;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 50%;
+}
